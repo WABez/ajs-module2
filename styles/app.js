@@ -38,7 +38,10 @@
 		var toBuyItems = [
 			{"itemName": "Cookies", "itemQuantity": 10},
 			{"itemName": "Chips", "itemQuantity": 6},
-			{"itemName": "Sugary Drink", "itemQuantity": 8}
+			{"itemName": "Sugary Drink", "itemQuantity": 8},
+			{"itemName": "Water", "itemQuantity": 12},
+			{"itemName": "Coffee", "itemQuantity": 7},
+			{"itemName": "Pie", "itemQuantity": 11}
 		];
 
 		var boughtItems = [

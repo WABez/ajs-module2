@@ -39,7 +39,7 @@
          <li>Buy 10 cookies <button class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li> -->
          <li ng-repeat="item in buyCtrl.toBuyItems">Buy {{ item.itemQuantity }} {{ item.itemName }} <button ng-click="buyCtrl.removeItem($index);" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span> Bought</button></li>
        </ul>
-       <div ng-if="buyCtrl.error" class="emptyMessage">Everything is bought!</div>
+       <div ng-if="buyCtrl.toBuyItems.length == 0" class="emptyMessage">Everything is bought!</div>
      </div>
     </div>
 
@@ -51,7 +51,7 @@
 <!--         <li>Bought 10 cookies</li> -->
          <li ng-repeat="item in boughtCtrl.boughtItems">Bought {{ item.itemQuantity }} {{ item.itemName }}</li>
        </ul>
-      <div ng-if="boughtCtrl.error" class="emptyMessage">Nothing bought yet.</div>
+      <div ng-if="boughtCtrl.boughtItems.length == 0" class="emptyMessage">Nothing bought yet.</div>
     </div>
   </div>
 </div>
